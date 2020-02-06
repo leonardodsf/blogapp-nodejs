@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/"><h4>Blog de NodeJS</h4></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Página inicial<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/categories">Categorias</a>
+      </li>
+      {{#if user}}
+      <a class="nav-link mr-sm-2">Seja Bem vindo, {{user.email}}</a>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin">Acessar Painel Adm</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/usuarios/logout"> Sair da conta</a>
+        </li>
+      </li>
+      {{else}}
+      <li class="nav-item">
+        <a class="nav-link" href="/usuarios/login">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/usuarios/registro">Cadastrar-se</a>
+      </li>
+      {{/if}}
+    </ul>   
+  </div>
+</nav>

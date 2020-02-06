@@ -1,0 +1,46 @@
+//express
+npm install --save express
+
+//handlebars
+npm install --save express-handlebars
+
+//body-parser
+npm install body-parser --save
+
+//mongoose
+npm install --save mongoose
+
+//express-session
+npm install --save express-session
+
+//connect-flash
+npm install --save connect-flash
+
+//Para fazer a listagem de categoria
+npm install --save handlebars@4.5.3
+
+
+//biblioteca de hash
+//bcrypt.js
+npm install --save bcryptjs
+
+//autenticação passport.js
+npm install --save passport
+
+passando a estrategia do passport
+
+npm install --save passport-local
+
+//após finalizar dar um npm init
+
+//para dar inicio ao projeto local, se usa nodemon, ja na heroku, ela usa o npm start
+//então precisa colocar esse script no package.json
+
+//a heroku usa uma porta aleatoria, entao por padrao, tem que colocar o seguinte script
+//Others
+const PORT = process.env.PORT || 8081
+app.listen(PORT,() => {
+  console.log("Server is Running...");
+});
+
+//MLAB disponibiliza 500mb no servidor mongoDB gratuitamente
